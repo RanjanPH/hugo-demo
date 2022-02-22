@@ -1,0 +1,21 @@
+baseURL = ''
+languageCode = 'en-us'
+title = 'WESTCLIFF UNIVERSITY-SMGE ASSIGMENTS'
+theme = 'PaperMod'
+
+[menu]
+[[menu.main]]
+  identifier ='categories'
+  name ='Categories'
+  url= '/categories/'
+  weight=20
+[[menu.main]]
+  identifier='tags'
+  name='Tags'
+  url = '/tags/'
+  weight= 50
+
+
+
+  
+
