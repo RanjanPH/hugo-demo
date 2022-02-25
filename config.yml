@@ -1,7 +1,13 @@
 baseURL: 'atulnepal.com.np'
 languageCode: en-us
+<<<<<<< HEAD
 title: WESTCLIFF UNIVERSITY-SMGE ASSIGMENTS
 theme: RaneTheme
+=======
+title: Rane ko Ban
+theme: RaneTheme
+
+>>>>>>> d61bc133f827b0bc4a0ef8709fa6c3d432d9f93f
 
 menu:
   main:

@@ -1,6 +1,17 @@
 {{ define "main" }}
 <div id="home-jumbotron" class="jumbotron text-center">
   <h1 class="title">{{ .Site.Title }}</h1>
+<<<<<<< HEAD
   <div>{{ .Content -}}</div>
+=======
+  <p class="subtitle">Hello World !!!</p>
+
+  {{ range .Pages.ByPublishDate.Reverse }}
+  <p>{{ .Title }}</p>
+  <!-- <p>{{ .Summary }}</p> -->
+  <!-- <p>{{ .Content}}</p> -->
+  {{ end }}
+
+>>>>>>> d61bc133f827b0bc4a0ef8709fa6c3d432d9f93f
 </div>
 {{ end }}
