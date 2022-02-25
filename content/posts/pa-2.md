@@ -25,23 +25,16 @@ Steve Job was considered the wizard of marketing and product design. He was a ru
 ## The following table provides a difference in the leadership style of Steve Job and Tim Cook.
 
 
-|Steve Job|Tim Cook|
- --------- --------
-|Manegiral style:|
--- Ruthless and strict
--- Competitive
--- Perfectionism
--- Product detailing and marketing
-|Managerial style:|
--- Teamwork 
---Transparency
---Calm and sympathetic
-|Steve Jobs used to fire employees if they were unable to answer his questions whenever he asked them questions in the elevator.
-|Tim Cook has calm behavior and he believes in teamwork among the employees. He believes in work perfection, conducts long meeting hours, and believes in the productive outcome of the meeting.|
-|Steve Jobs was accused of pushing the employees to the limit through extreme work hours and was accused of putting Chinese laborers through extreme work in Chinese factories.|
-|Apple was accused of helping NASA steal Iphone users' data in the leadership of Tim Cook.|
-|Steve Jobs didn’t believe in pleasing the investors, so during his period, he didn’t pay regular dividends to the Apple inc investors.|
-|Tim Cook is more focused on public relations, so the company under his leadership announced cash dividends to the investors for the first time in 17years.|
+> Table Diffrence between Steve Job and Tim Cook
+
+|                                                                Steve Job                                                               |                                                                                             TIm Cook                                                                                             |
+|:--------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Managerial style: * Ruthless and strict * Competitive * Perfectionism * Product detailing and marketing                                | Managerial style: * Teamwork  * Transparency * Calm and sympathetic                                                                                                                              |
+| Steve Jobs used to fire employees if they were unable to answer his questions whenever he asked them questions in the elevator.        | Tim Cook has calm behavior and he believes in teamwork among the employees.  He believes in work perfection, conducts long meeting hours, and believes in the productive outcome of the meeting. |
+| Steve Jobs didn’t believe in pleasing the investors, so during his period,  he didn’t pay regular dividends to the Apple inc investors | Tim Cook is more focused on public relations, so the company under  his leadership announced cash dividends to the investors for the first  time in 17years.                                     |
+
+
+
 
 
 

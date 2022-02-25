@@ -4,6 +4,10 @@ date: 2022-02-22T15:59:48+05:45
 draft: false
 categories: ["CLA"]
 tags: ['BUS','SMGE']
+cover:
+  image: partice/gg.png
+  alt : 'This is a image'
+  caption: 'CLA 1'
 
 ---
 
