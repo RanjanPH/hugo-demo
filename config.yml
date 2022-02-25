@@ -1,8 +1,7 @@
 baseURL: 'atulnepal.com.np'
 languageCode: en-us
 title: WESTCLIFF UNIVERSITY-SMGE ASSIGMENTS
-theme: PaperMod
-
+theme: RaneTheme
 
 menu:
   main:
