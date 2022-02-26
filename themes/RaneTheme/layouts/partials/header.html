@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button
@@ -18,10 +17,9 @@
       {{ range .Site.Menus.main }}
 
       <li class="nav-item active">
-        <a class="nav-link" href="#"> {{ print .Name}}</a>
+        <a class="nav-link" href="{{ print .URL}}"> {{ print .Name}}</a>
       </li>
       {{end}}
-      
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input
