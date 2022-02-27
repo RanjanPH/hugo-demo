@@ -1,0 +1,15 @@
+<div class="section">
+  <div class="container">
+    <div class="column title has-text-centered">
+      <h1>Trusted By:</h1>
+      <div class="columns">
+        {{ range (where site.RegularPages "Section" "brands") }}
+        <div class="column">
+          <img src="{{ .Params.Logo }}" />
+          <p>{{ .Title}}</p>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</div>
