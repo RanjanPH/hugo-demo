@@ -16,3 +16,11 @@ menu:
     - identifier: cla
       name: Cla
       url: /cla/
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+    - identifier: contact
+      name: Contact
+      url: /contact/
+  

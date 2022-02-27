@@ -1,9 +1,47 @@
 <footer class="footer">
-  <div class="content has-text-centered">
+  <div class="content">
     <p>
       <strong>Uhana</strong> by <a>Ranjan Koirala</a>. The source code is
       licensed <a>Nailtus</a>. The website content is licensed
       <a>CC BY NC SA 4.0</a>.
     </p>
+    <div class="columns">
+
+      <div class="column is-one-third ">
+        Products
+        <ul>
+          {{ range .Site.Menus.footer }}
+          <li>
+            {{.Name}}
+          </li>
+          {{end}}
+        </ul>
+      </div>
+
+      <div class="column is-one-third ">
+        Products
+        <ul>
+          {{ range .Site.Menus.footer }}
+          <li>
+            {{.Name}}
+          </li>
+          {{end}}
+        </ul>
+      </div>
+
+      <div class="column is-one-third ">
+        Products
+        <ul>
+          {{ range .Site.Menus.footer }}
+          <li>
+            <a href="{{.URL}}"> {{.Name}} </a>
+          </li>
+          {{end}}
+        </ul>
+      </div>
+
+
+    </div>
+
   </div>
 </footer>

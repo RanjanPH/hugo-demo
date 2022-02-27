@@ -1,6 +1,9 @@
 {{ define "conto" }}
 <div class="container">
-    <img src="{{ .Params.Logo }}" />
+    <div class="my-5 columns is-centered">
+        <img class="is-centered" src="{{ .Params.Logo }}" />
+    </div>
+
     <h1 class="has-text-centered is-size-1 my-5">{{ .Title }}</h1>
     <div class="content my-5">
         {{ .Content }}

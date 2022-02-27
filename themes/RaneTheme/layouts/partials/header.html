@@ -1,26 +1,46 @@
-<nav class="navbar has-shadow is-primary">
-  <!-- log/ brand  (div,navbar-brand) -->
-  <div class="navbar-brand">
-    <a class="navbar.item" href="/">
-      <img
-        src="/images/lotus.png"
-        alt="site logo"
-        style="max-height: 100"
-        class="py-2 px-2"
-      />
-    </a>
-    <a class="navbar-burger" id="burger">
-      <span class="span"></span>
-      <span class="span"></span>
-      <span class="span"></span>
-    </a>
+<section class="hero  is-large" style="background-color:#0F2C66;">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="/" class="navbar-item">
+
+            <img src="/images/lotus.png" alt="site logo" />
+          </a>
+          <span class="navbar-burger has-text-white" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            {{ range .Site.Menus.main}}
+            <a class="navbar-item has-text-white" href="{{.URL}}">{{.Name}}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 
-  <div class="navbar-menu" id="nav-links">
-    <div class="navbar-end">
-      {{ range .Site.Menus.main}}
-      <a class="navbar-item" href="{{.URL}}">{{.Name}}</a>
-      {{ end }}
+  <!-- Hero content: will be in the middle -->
+  {{ if .IsHome }}
+  {{ range (where site.RegularPages "Section" "hero") }}
+  <div class="hero-body">
+    <div class="container">
+      <p class="title has-text-white">
+        {{ .Title}}
+      </p>
+      <p class="subtitle has-text-white">
+        {{ .Params.Desc}}
+      </p>
+      <a href="{{.Permalink}}" class="button is-outlined" style="background-color:#0F2C66"> <span class="has-text-white"> Learn
+          More</span></a>
     </div>
   </div>
-</nav>
+  {{end}}
+  {{end}}
+
+</section>

@@ -1,25 +1,26 @@
 {{ define "conto" }}
 
-<!-- <!product info> -->
 
-<section class="section">
-  <div class="container">
-    <div class="colums">
-      <div class="colums is-3 has-text-centered">
-        <h1 class="is-size-1 title has-text-danger has-text-centered ">
-          Instragram Scrapping
-        </h1>
-        <p>
-          All your solution to data in one place.Natilus provides the best
-          service in the country for all your datas.
-        </p>
-      </div>
-      <div class="column is-9">
-        <img src="assets/web.png" alt="" class="px-6" />
-      </div>
+<!-- <!product info> -->
+<!-- {{ range (where site.RegularPages "Section" "hero") }}
+<div class="hero is-large" style="background-color: {{ .Params.BackgroundColor }};">
+  <div class="hero-body ">
+    <div class="title has-text-white	">
+      {{.Title}}
     </div>
+
+    <div class="subtitle has-text-white">
+      {{ .Params.Desc}}
+    </div>
+
+    <button class="button is-success">Inverted</button>
+
+
+
   </div>
-</section>
+</div>
+{{end}} -->
+
 <!-- Trusted by Section -->
 {{- partial "trusted_by.html" . -}}
 <!--  Releted Services Section> -->
