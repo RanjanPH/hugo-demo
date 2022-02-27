@@ -1,12 +1,16 @@
 <div class="section">
   <div class="container">
     <div class="column title has-text-centered">
-      <h1>Trusted By:</h1>
+      <h1 class="header pb-4">Trusted By</h1>
       <div class="columns">
         {{ range (where site.RegularPages "Section" "brands") }}
         <div class="column">
-          <img src="{{ .Params.Logo }}" />
-          <p>{{ .Title}}</p>
+          <img src="{{ .Params.Logo }}" height="64" width="64" />
+
+          <p class="is-text is-size-3">
+            {{ .Title}}
+          </p>
+
         </div>
         {{end}}
       </div>
