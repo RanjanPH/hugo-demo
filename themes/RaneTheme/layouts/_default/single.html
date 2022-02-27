@@ -1,5 +1,10 @@
-{{ define "main" }}
-<h1>{{ .Title }}</h1>
-<br><br>
-{{ .Content }}
+{{ define "conto" }}
+<div class="container">
+    <img src="{{ .Params.Logo }}" />
+    <h1 class="has-text-centered is-size-1 my-5">{{ .Title }}</h1>
+    <div class="content my-5">
+        {{ .Content }}
+    </div>
+</div>
+
 {{ end }}

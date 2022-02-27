@@ -1,19 +1,17 @@
 <div class="section">
   <div class="container">
-    <div class="column title has-text-centered">
-      <h1 class="header pb-4">Trusted By</h1>
-      <div class="columns">
-        {{ range (where site.RegularPages "Section" "brands") }}
-        <div class="column">
-          <img src="{{ .Params.Logo }}" height="64" width="64" />
+    <h1 class="has-text-centered is-size-3 has-text-normal mb-5">Trusted By</h1>
+    <div class="columns has-text-centered">
+      {{ range (where site.RegularPages "Section" "brands") }}
+      <div class="column">
+        <img src="{{ .Params.Logo }}" height="64" width="64" />
+        <h3 class="my-3 is-text is-size-5">
+          {{ .Title}}
+        </h3>
 
-          <p class="is-text is-size-3">
-            {{ .Title}}
-          </p>
-
-        </div>
-        {{end}}
       </div>
+      {{end}}
     </div>
   </div>
+</div>
 </div>

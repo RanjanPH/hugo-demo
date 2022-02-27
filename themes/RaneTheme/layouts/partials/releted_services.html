@@ -1,0 +1,25 @@
+<div class="section">
+  <div class="container">
+    <h1 class="has-text-centered is-size-3 has-text-normal mb-5">Related Services</h1>
+    <div class="columns mt-5 is-8 is-variable is-centered">
+      {{ range (where site.RegularPages "Section" "new-services") }}
+
+      <div class="column is-3">
+        <div class="card py-4">
+          <div class="card-image has-text-centered px-6">
+            <img src="{{.Params.Logo}}" />
+          </div>
+          <div class="card-content">
+            <h2 class="title is-size-5 has-text-weight-normal	has-text-centered	"> {{.Title}}</h2>
+          </div>
+          <footer class="card-footer">
+            <h3 class="card-footer-item">
+              <a href="{{.Permalink}}" class="has text-grey">View</a>
+            </h3>
+          </footer>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
