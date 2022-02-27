@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button
     class="navbar-toggler"
@@ -17,7 +17,7 @@
       {{ range .Site.Menus.main }}
 
       <li class="nav-item active">
-        <a class="nav-link" href="{{ print .URL}}"> {{ print .Name}}</a>
+        <a class="nav-link" href="{{ .URL}}"> {{ .Name}}</a>
       </li>
       {{end}}
     </ul>
@@ -32,5 +32,32 @@
         Search
       </button>
     </form>
+  </div>
+</nav> -->
+
+<nav class="navbar has-shadow is-primary">
+  <!-- log/ brand  (div,navbar-brand) -->
+  <div class="navbar-brand">
+    <a class="navbar.item">
+      <img
+        src="assets/naut.jpg"
+        alt="site logo"
+        style="max-height: 100"
+        class="py-2 px-2"
+      />
+    </a>
+    <a class="navbar-burger" id="burger">
+      <span class="span"></span>
+      <span class="span"></span>
+      <span class="span"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu" id="nav-links">
+    <div class="navbar-end">
+      {{ range .Site.Menus.main}}
+      <a class="navbar-item" href="{{.URL}}">{{.Name}}</a>
+      {{ end }}
+    </div>
   </div>
 </nav>

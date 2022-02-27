@@ -1,30 +1,115 @@
 {{ define "main" }}
+    
 
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1 class="title">{{ .Site.Title }}</h1>
+    <!-- <!product info> -->
+  
 
-  <h2>Trusted By</h2>
-  <br />
-  {{- range ( where site.RegularPages "Section" "brands" | first 3 ) }}
-  <div>
-    <h4>{{.Title}}</h4>
-    <img src="{{.Params.logo}}" />
-  </div>
-  <br />
-  {{end}}
+    <section class="section">
+      <div class="container">
+        <div class="colums">
+          <div class="colums is-3 has-text-centered">
+            <h1 class="is-size-1 title has-text-danger has-text-centered">
+              Instragram Scrapping
+            </h1>
+            <p>
+              All your solution to data in one place.Natilus provides the best
+              service in the country for all your datas.
+            </p>
+          </div>
+          <div class="column is-9">
+            <img src="assets/web.png" alt="" class="px-6" />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <div class="section">
+        <div class="container">
+            <div class="column title  has-text-centered has-text-danger">
+                <h1>
+                    Trusted BY:
+                </h1>
+                <div class="columns">
+                    <div class="column has-text-info ">
+                        <p>Atul</p>
+                    </div>
+                    <div class="column has has-text-warning ">
+                        <p>Ranjan</p>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+    <!-- <! section> -->
+    <section class="section">
+        <div class="container">
+            <h3 class="title has-text-centered is-size-4">Related services</h3>
+            <div class="columns mt-5 is-8 is-variable">
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/logo.png" alt="product">
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-size-5">Twitter Scrapping</p>
+                    
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="" class="has text-grey">View</a>
+                            </p>
+                        </footer>
 
-  <h2>Posts By</h2>
-  <br />
-  {{- range ( where site.RegularPages "Section" "posts" | first 3 ) }}
-  <div>
-    <img src="{{.Params.cover.image}}" />
-    <h4>{{.Title}}</h4>
-    <p>{{.Summary}}</p>
-    <!-- <img src="{{.Params.logo}}" /> -->
-  </div>
-  <br />
-  {{end}}
-</div>
+                    </div>
+                    
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="assets/facebook.png" alt="product">
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-size-5">Facebook Scrapping</p>
+                    
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="" class="has text-grey">View</a>
+                            </p>
+                        </footer>
+                        
+                    </div>
+                </div>
+                <div class="column is-3"><div class="card">
+                    <div class="card-image has-text-centered px-6">
+                        <img src="assets/Telegram_logo.svg.png" alt="product">
+                    </div>
+                    <div class="card-content">
+                      <p class="title is-size-5">Telegram Scrapping</p>
+                
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="" class="has text-grey">View</a>
+                        </p>
+                    </footer>
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </section>
 
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Uhana</strong> by <a >Ranjan Koirala</a>. The source code is licensed
+          <a>Nailtus</a>. The website content
+          is licensed <a>CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
 {{ end }}
